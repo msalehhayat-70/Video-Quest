@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoQuest | Professional Video Downloader</title>
+    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <i data-lucide="zap" class="logo-icon"></i>
+                <span class="logo-text">VideoQuest</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="main-title">Professional Video Downloader</h1>
+                <p class="main-subtitle">High-speed content extraction from TikTok, Instagram,Facebook and YouTube.</p>
+
+                <div class="search-container">
+                    <div class="input-group">
+                        <i data-lucide="link" class="input-icon"></i>
+                        <input type="text" id="videoUrl" placeholder="Enter video URL here..." autocomplete="off">
+                        <button id="fetchBtn" class="btn-primary">
+                            <span class="btn-label">Generate Links</span>
+                            <div class="loader" id="mainLoader"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="resultsArea" class="results-grid">
+                    <!-- Injected results -->
+                </div>
+
+                <div id="errorArea" class="error-box"></div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container grid-3">
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Secure Transfers</h3>
+                    <p>Encrypted end-to-end processing for your privacy.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="zap"></i></div>
+                    <h3>Instant Fetch</h3>
+                    <p>Lightning fast link generation across all platforms.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="monitor"></i></div>
+                    <h3>HD Quality</h3>
+                    <p>Always get the best available resolution up to 4K.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-card">
+                    <h2>About VideoQuest</h2>
+                    <p style="color: var(--text-secondary); font-size: 1.2rem;">
+                        VideoQuest is a professional-grade media extraction tool designed for speed and reliability.
+                        We combine the power of advanced backend processing with a sleek, intuitive interface
+                        to give you the best download experience on the web.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">VideoQuest</div>
+            <p class="copyright">&copy; 2026 VideoQuest Pro. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toastContainer" class="toast-manager"></div>
+
+    <script src="script.js?v=10"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
